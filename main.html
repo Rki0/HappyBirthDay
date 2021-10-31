@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +9,28 @@
   crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
   <header>
     <div id="lang">
-      <p class="country" id="ko">한국어 </p>
-      <p class="country" id="jp">| 日本語 </p>
-      <p class="country" id="en">| English</p>
+      <p class="country" id="ko" onclick="changeKo()">한국어 </p>
+      <p class="country" id="jp" onclick="changeJp()">| 日本語 </p>
+      <p class="country" id="en" onclick="changeEn()">| English</p>
     </div>
   </header>
   <section>
     <div id="question">
-      <h1>What's your name?</h1>
+      <h1 id="whatName">君の名は</h1>
     </div>
     <div id="info">
         <div>
-          <input type="text" id="nameIn" autofocus required placeholder="이름을 입력하고 케이크를 누르세요!">
+          <input type="text" id="nameIn" autofocus required placeholder="名前を入力してケーキをクリックしてください。">
         </div>
         <div>
           <i class="fas fa-birthday-cake fa-3x" id="btn" style="color:#f8bbd0 ;"></i>
         </div>
     </div>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>

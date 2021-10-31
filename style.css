@@ -1,6 +1,5 @@
 html {
-  background: url(images/tokyo_street_by_arsenixc_daj4ocm-pre.jpg) no-repeat
-    center fixed;
+  background: url(images/destination_tokyo.jpg) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -21,10 +20,14 @@ html {
   /*  <p>를 사용하였기 때문에 기본적으로 block 성질을 가진다.
       따라서 옆으로 나열하기 위해서는 inline 성질을 가지도록 해줘야하는데,
       block 성질에서의 속성값을 포기하지 않기 위해 inline-block을 사용한다.
-      
+      또한, inline 성질을 가졌으므로 block 성질만 가졌을 때와
+      다르게 <p>에 입력한 띄어쓰기가 구현된 것이 확인 가능하다.
+
       float: left로 하면 .country에 #lang에서 정의한 text-align이 적용되지않는다. 
       -이유는?
   */
+  cursor: pointer;
+  color: white;
 }
 
 #question {
@@ -56,4 +59,5 @@ html {
   margin-top: 3px;
   position: absolute;
   text-shadow: 0px 0px 3px black;
+  cursor: pointer;
 }
